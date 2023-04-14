@@ -10,7 +10,7 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from SeleniumLibrary.errors import ElementNotFound
 from RPA.Robocorp.WorkItems import WorkItems
-from RPA.Excel.Files import Files
+
 
 def main(word: str, categories: list[str], number_of_months: int):
     # Lists of lists with the information of earch row
@@ -61,9 +61,11 @@ def main(word: str, categories: list[str], number_of_months: int):
         print("Element show more button: ")
         print(is_show_more_btn)
 
-        while nynews_obj.browser_lib.is_element_visible(SHOW_MORE_BTN) and nynews_obj.browser_lib.is_element_enabled:
+        nynews_obj.browser_lib.capture_element_screenshot(SHOW_MORE_BTN, filename="./output/screenshot_btn.png")
+        nynews_obj.browser_lib.capture_element_screenshot("css:div.css-f63blv.e2qmvq0", filename="./output/screenshot_btn.png")
+        while nynews_obj.browser_lib.is_element_enabled("css:div.css-f63blv.e2qmvq0"):
             print("Button Load More")
-            nynews_obj.click_on_element(SHOW_MORE_BTN)
+            nynews_obj.click_on_element("css:div.css-f63blv.e2qmvq0")
 
         # Create a directory of the execution results with the today's datetime as name
 
