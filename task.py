@@ -61,7 +61,7 @@ def main(word: str, categories: list[str], number_of_months: int):
         print("Element show more button: ")
         print(is_show_more_btn)
 
-        while nynews_obj.browser_lib.is_element_visible(SHOW_MORE_BTN):
+        while nynews_obj.browser_lib.is_element_visible(SHOW_MORE_BTN) and nynews_obj.browser_lib.is_element_enabled:
             print("Button Load More")
             nynews_obj.click_on_element(SHOW_MORE_BTN)
 
