@@ -16,7 +16,7 @@ class NYNEWS_OBJ:
         """
         This method opens any web browser available, recommended chrome
         """
-        self.browser_lib.open_chrome_browser(self.url)
+        self.browser_lib.open_browser(browser="edge")
         self.browser_lib.maximize_browser_window()
         self.browser_lib.set_browser_implicit_wait(value=5.0)
 

@@ -62,7 +62,7 @@ def main(word: str, categories: list[str], number_of_months: int):
         print(is_show_more_btn)
 
         nynews_obj.browser_lib.capture_element_screenshot(SHOW_MORE_BTN, filename="./output/screenshot_btn.png")
-        nynews_obj.browser_lib.capture_element_screenshot("css:div.css-f63blv.e2qmvq0", filename="./output/screenshot_btn.png")
+        nynews_obj.browser_lib.capture_element_screenshot("css:div.css-f63blv.e2qmvq0", filename="./output/screenshot_btn2.png")
         # while nynews_obj.browser_lib.is_element_enabled("css:div.css-f63blv.e2qmvq0"):
         #     print("Button Load More")
         #     nynews_obj.click_on_element("css:div.css-f63blv.e2qmvq0")
