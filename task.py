@@ -62,9 +62,9 @@ def main(word: str, categories: list[str], number_of_months: int):
         print(is_show_more_btn)
 
         nynews_obj.browser_lib.capture_element_screenshot(SHOW_MORE_BTN, filename="./output/screenshot_btn.png")
-        nynews_obj.browser_lib.capture_element_screenshot("", filename="./output/screenshot_btn2.png")
+        nynews_obj.browser_lib.capture_element_screenshot(COOKIES_POPUP, filename="./output/screenshot_btn2.png")
         if nynews_obj.browser_lib.is_element_visible(COOKIES_POPUP):
-            nynews_obj.browser_lib.press_keys(COOKIES_POPUP, ALT_KEY, ALT_KEY, ENTER_KEY)
+            nynews_obj.browser_lib.press_keys(COOKIES_POPUP, ALT_KEY, ALT_KEY, ALT_KEY, ENTER_KEY)
         nynews_obj.browser_lib.capture_element_screenshot(SHOW_MORE_BTN, filename="./output/screenshot_btn3.png")
 
         # while nynews_obj.browser_lib.is_element_enabled("css:div.css-f63blv.e2qmvq0"):
