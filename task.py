@@ -27,7 +27,7 @@ def main(word: str, categories: list[str], number_of_months: int):
         nynews_obj.click_on_btn()
         nynews_obj.search_for(word=word)
         nynews_obj.click_on_element(SORT_FILTER_BTN)
-        nynews_obj.press_key(SORT_FILTER_BTN, DOWN_ARROW)
+        nynews_obj.browser_lib.press_keys(SORT_FILTER_BTN, DOWN_ARROW)
 
         # Filter for most recent news
         nynews_obj.click_on_btn(SECTION_FILTER_BTN)
