@@ -16,7 +16,7 @@ class NYNEWS_OBJ:
         """
         This method opens any web browser available, recommended chrome
         """
-        self.browser_lib.open_browser(browser="edge")
+        self.browser_lib.open_chrome_browser(self.url)
         self.browser_lib.maximize_browser_window()
         self.browser_lib.set_browser_implicit_wait(value=5.0)
 
@@ -50,13 +50,6 @@ class NYNEWS_OBJ:
         This method closes all the active sessions of this object
         """
         self.browser_lib.close_all_browsers()
-
-
-    def press_key(self, css_exp: str, key_name: str):
-        """
-        This method performs a key action in a specific web element
-        """
-        self.browser_lib.press_keys(css_exp, key_name)
 
 
     def wait_for_element_to_be_present(self, css_exp: str):

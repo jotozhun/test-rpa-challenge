@@ -25,6 +25,8 @@ NOT_FOUND_ELEMENT = ""
 # KEY ARROWS
 UP_ARROW = "UP"
 DOWN_ARROW = "DOWN"
+ALT_KEY = "ALT"
+ENTER_KEY = "ENTER"
 
 # SORT FILTER
 SORT_FILTER_BTN = "css:select.css-v7it2b"
@@ -44,6 +46,7 @@ HIDE_DATE_FILTER_BTN = "css:button.css-p5555t.popup-visible.calendar-open"
 
 # SHOW MORE
 SHOW_MORE_BTN = 'css:button[data-testid="search-show-more-button"]'
+COOKIES_POPUP = 'css:div.css-f63blv.e2qmvq0'
 
 # NEWS ELEMENT
 NEWS_ELEMENT = "css:li.css-1l4w6pd"
